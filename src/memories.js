@@ -260,7 +260,7 @@ async function genSummary(history, id=0) {
 
 async function generateMemory(message, span=0) {
 	const mes_id = Number(message.attr('mesid'));
-	let memory_span = span > 0 ? span : settings.memory_span
+	let memory_span = span >= 0 ? span : settings.memory_span
 
 	const memory_history = await processMessageSlice(mes_id, memory_span);
 	debug('memory history', memory_history);
