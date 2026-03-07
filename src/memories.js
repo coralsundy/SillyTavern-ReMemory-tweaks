@@ -187,6 +187,12 @@ async function processMessageSlice(mes_id, count=0, start=0) {
 			message_history = message_history.slice(-1*count);
 		}
 	}
+	else if (count == 0) {
+		message_history = message_history.slice(-1);
+	}
+	else {
+		message_history = message_history.slice(-1*3);
+	}
 	return message_history;
 }
 
