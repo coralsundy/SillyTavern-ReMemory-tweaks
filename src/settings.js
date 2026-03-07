@@ -44,7 +44,7 @@ Briefly summarize the most important details and events that occured in that seq
 	"memory_depth": 4, // depth
 	"memory_life": 3,	// sticky
 	"memory_role": 0,	// message role
-	"memory_span": 3,	// how far back in the chat to include in a memory
+	"memory_span": 0,	// how far back in the chat to include in a memory
 	"trigger_pct": 50, // trigger % for normal keyword entries
 	"allow_names": false, // whether to strip card/persona names from keywords
 	// popup WI settings
